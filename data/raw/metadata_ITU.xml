@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="f09dad2d-ad97-4b08-ba85-3e9325476a6d" system="uuid" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd">
+  <dataset>
+    <keywordSet>
+      <keyword>coralsnakes</keyword>
+      <keyword>Index of Taxonomic Uncertainty</keyword>
+      <keyword>New World</keyword>
+      <keywordThesaurus>ITU coralsnakes</keywordThesaurus>
+    </keywordSet>
+    <coverage>New World (USA - Argentina)</coverage>
+    <dataTable>
+      <entityName>coralsnakes_data_ITU.xlsx</entityName>
+      <entityDescription>creating the Index of Taxonomic Uncertainty</entityDescription>
+      <physical>
+        <objectName>coralsnakes_data_ITU.xlsx</objectName>
+        <size unit="bytes">17064</size>
+        <authentication method="MD5">836914098c2016197d33002a67af03bf</authentication>
+        <dataFormat>
+          <textFormat>
+            <recordDelimiter>&#13;
+</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>Species</attributeName>
+          <attributeDefinition>the list of the 85 New World coralsnake species.</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain/>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Description_date</attributeName>
+          <attributeDefinition>the date of description of each New World coralsnake species multiplied by -1.</attributeDefinition>
+          <storageType>date</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>-YYYY</formatString>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Latitude</attributeName>
+          <attributeDefinition>the latitude of the centroid of each New World coralsnake species.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>decimal degrees</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Longitude</attributeName>
+          <attributeDefinition>the longitude of the centroid of each New World coralsnake species.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>decimal degrees</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Range_size</attributeName>
+          <attributeDefinition>the geographic range size of each New World coralsnake species.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>square kilometers</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Synonyms</attributeName>
+          <attributeDefinition>the number of synonyms for each New World coralsnake species.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Body_size</attributeName>
+          <attributeDefinition>the total body length of each New World coralsnake species.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>millimeter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Papers</attributeName>
+          <attributeDefinition>the number of scientific papers for each New World coralsnake species.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Records</attributeName>
+          <attributeDefinition>the number of occurrence records retrieved from GBIF, scientific papers, and natural
+history museums for each New World coralsnake species.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>DR</attributeName>
+          <attributeDefinition>The estimated DR statistic for each New World coralsnake species.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Splitting</attributeName>
+          <attributeDefinition>the average response of taxonomists regarding the likelihood of an accepted New
+World coralsnake species being split after undergoing a taxonomic revision.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+    </dataTable>
+  </dataset>
+</eml:eml>
