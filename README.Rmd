@@ -1,0 +1,16 @@
+---
+output: github_document
+---
+# Introduction
+
+This repository contains all data, scripts, and functions related to the manuscript titled 'The interaction between the linnean and darwinian shortfalls affects our understanding of the evolutionary dynamics driving diversity patterns of New World coralsnakes,' which has been submitted to Ecography. 
+
+# Organization
+
+Data: contains all data needed to perform the analysis.
+Raw: contains the raw data used to create the Index of Taxonomic Uncertainty, perform the simulations, and generate the figures. 
+Processed: contains the output of the simulation.
+R: contains all R scripts used to run analysis and generate figures for the results of these analyses.
+
+# Authors
+Lívia Frateles, Gabriel Nakamura & Guilherme Rogie  

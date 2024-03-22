@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="4c0e096b-17e1-445b-a355-f3ff5678426e" system="uuid" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd">
+  <dataset>
+    <keywordSet>
+      <keyword>coralsnakes</keyword>
+      <keyword>Index of Taxonomic Uncertainty</keyword>
+      <keyword>New World</keyword>
+      <keyword>Distribution</keyword>
+      <keywordThesaurus>ITU and Distribution coralsnakes</keywordThesaurus>
+    </keywordSet>
+    <coverage>New World (USA - Argentina)</coverage>
+    <dataTable>
+      <entityName>Vetor.xlsx</entityName>
+      <entityDescription>For input simulation</entityDescription>
+      <physical>
+        <objectName>Vetor.xlsx</objectName>
+        <size unit="bytes">18487</size>
+        <authentication method="MD5">34e6c3fe4bb7d9ddf863342fbed48cab</authentication>
+        <dataFormat>
+          <textFormat>
+            <recordDelimiter>&#13;
+</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>Species</attributeName>
+          <attributeDefinition>the list of the 85 New World coralsnake species.</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain/>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>ITU</attributeName>
+          <attributeDefinition>Index of Taxonomic Uncertainty for the 85 New World
+    coralsnakes based on taxonomists’responses modeled 
+    for macroecological and taxonomic variables.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>LongMin</attributeName>
+          <attributeDefinition>The minimum longitude of the geographic range for each New World coral snake
+species.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>decimal degrees</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>LatMin</attributeName>
+          <attributeDefinition>The minimum latitude of the geographic range for each New World coral snake
+species.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>decimal degrees</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>LongMax</attributeName>
+          <attributeDefinition>The maximum longitude of the geographic range for each New World coral snake
+species.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>decimal degrees</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>LatMax</attributeName>
+          <attributeDefinition>The maximum latitude of the geographic range for each New World coral snake
+species.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>decimal degrees</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>LatC</attributeName>
+          <attributeDefinition>the latitude of the centroid of each New World coralsnake species.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>decimal degrees</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>LongC</attributeName>
+          <attributeDefinition>the longitude of the centroid of each New World coralsnake species.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>decimal degrees</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+    </dataTable>
+  </dataset>
+</eml:eml>

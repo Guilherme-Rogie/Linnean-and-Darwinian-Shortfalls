@@ -1,40 +1,81 @@
 library(EML)
 attributes <-
   tibble::tribble(
-    ~attributeName, ~attributeDefinition,                                                 ~formatString,         ~unit,   ~numberType,
-    "Species",    "the list of the 85 New World coralsnake species.",                 NA, NA,       NA,
-    "Description_date", "the date of description of each New World coralsnake species multiplied by -1.",    "-YYYY", NA,       NA,
-    "Latitude",        "the latitude of the centroid of each New World coralsnake species.",        NA,   "decimal degrees",    "real"  ,
-    "Longitude",   "the longitude of the centroid of each New World coralsnake species.",           NA,   "decimal degrees",    "real",
-    "Range_size",     "the geographic range size of each New World coralsnake species.",           NA,      "square kilometers","real",
-    "Synonyms",   "the number of synonyms for each New World coralsnake species.", NA,                             NA,       "real",
-    "Body_size",    "the total body length of each New World coralsnake species.",       NA,                      "millimeter", "real",
-    "Papers",    "the number of scientific papers for each New World coralsnake species.",     NA,                             NA,  "real",
-    "Records","the number of occurrence records retrieved from GBIF, scientific papers, and natural
-history museums for each New World coralsnake species.",NA,NA,"real",
-    "DR","The estimated DR statistic for each New World coralsnake species.",NA,NA,"real",
-    "Splitting","the average response of taxonomists regarding the likelihood of an accepted New
-World coralsnake species being split after undergoing a taxonomic revision.",NA,NA,"real")
+    ~attributeName, ~attributeDefinition,   ~numberType,
+    "R2_lat_antes",    "Adjusted R for the linear model (formula: DR ~ latitude) before incorporating
+the Index of",       "real",
+    "lambda_lat_antes",        "Page’s for the linear model (formula: DR ~ latitude) before incorporating
+the Index of Taxonomic Uncertainty in the simulations and before splitting the species in the
+phylogeny.",    "real"  ,
+    "alpha_lat_antes",   "for the linear model (formula: DR ~ latitude) before incorporating the Index
+of Taxonomic Uncertainty in the simulations and before splitting the species in the phylogeny." ,"real",
+    "beta_lat_antes",     " for the linear model (formula: DR ~ latitude) before incorporating the Index
+of Taxonomic Uncertainty in the simulations and before splitting the species in the phylogeny.","real",
+    "R2_quad_lat_antes",   "Adjusted R for the quadratic model (formula: DR ~ latitude + latitude2)
+before incorporating the Index of Taxonomic Uncertainty in the simulations and before
+splitting the species in the phylogeny.",       "real",
+    "lambda_quad_lat_antes"," Page’s for the quadratic model (formula: DR ~ latitude + latitude2)
+before incorporating the Index of Taxonomic Uncertainty in the simulations and before
+splitting the species in the phylogeny.","real",
+    "alpha_quad_lat_antes"," for the quadratic model (formula: DR ~ latitude + latitude2) before
+incorporating the Index of Taxonomic Uncertainty in the simulations and before splitting the
+species in the phylogeny.","real",
+    "beta1_quad_lat_antes"," for the linear term of the quadratic model (formula: DR ~ latitude +
+latitude2) before incorporating the Index of Taxonomic Uncertainty in the simulations and
+before splitting the species in the phylogeny.","real",
+    "beta2_quad_lat_antes"," for the quadratic term of the quadratic model (formula: DR ~ latitude
++ latitude2) before incorporating the Index of Taxonomic Uncertainty in the simulations and
+before splitting the species in the phylogeny.","real",
+    "R2_lat_depois","Adjusted R for the linear model (formula: DR ~ latitude) after incorporating the
+Index of Taxonomic Uncertainty in the simulations and after splitting the species in the
+phylogeny.","real",
+    "lambda_lat_depois"," Page’s for the linear model (formula: DR ~ latitude) after incorporating
+the Index of Taxonomic Uncertainty in the simulations and after splitting the species in the
+phylogeny.","real",
+    "alpha_lat_depois","for the linear model (formula: DR ~ latitude) after incorporating the Index
+of Taxonomic Uncertainty in the simulations and after splitting the species in the phylogeny.","real",
+    "beta_lat_depois","for the linear model (formula: DR ~ latitude) after incorporating the Index
+of Taxonomic Uncertainty in the simulations and after splitting the species in the phylogeny.","real",
+    "R2_quad_lat_depois","Adjusted R for the quadratic model (formula: DR ~ latitude + latitude2)
+after incorporating the Index of Taxonomic Uncertainty in the simulations and after splitting
+the species in the phylogeny.","real",
+    "lambda_quad_lat_depois"," Page’s for the quadratic model (formula: DR ~ latitude + latitude2)
+after incorporating the Index of Taxonomic Uncertainty in the simulations and after splitting
+the species in the phylogeny.","real",
+    "alpha_quad_lat_depois"," for the quadratic model (formula: DR ~ latitude + latitude2) after
+incorporating the Index of Taxonomic Uncertainty in the simulations and after splitting the
+species in the phylogeny.","real",
+    "beta1_quad_lat_depois","for the linear term of the quadratic model (formula: DR ~ latitude +
+latitude2) after incorporating the Index of Taxonomic Uncertainty in the simulations and after
+splitting the species in the phylogeny.","real",
+    "beta2_quad_lat_depois"," for the quadratic term of the quadratic model (formula: DR ~
+latitude + latitude2) after incorporating the Index of Taxonomic Uncertainty in the simulations
+and after splitting the species in the phylogeny.","real",
+    "split","the number of splits in each simulation.","real",
+    "index_run","the number of runs. For each of the 1000 phylogenetic trees, 100 runs were
+performed.","real",
+    "index_tree","the number of the phylogenetic tree. There are 1000 phylogenetic trees.","real")
 
-attributeList <- set_attributes(attributes, col_classes = c("character", "Date", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric","numeric","numeric","numeric"))
-physical <- set_physical(here::here("data","raw", "coralsnakes_data_ITU.xlsx"))
+attributeList <- set_attributes(attributes, col_classes = c( "numeric", "numeric", "numeric", "numeric", "numeric", "numeric","numeric",
+                                                             "numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric",
+                                                             "numeric","numeric","numeric","numeric","numeric","numeric"))
+physical <- set_physical(here::here("data","processe", "Simulation_results.csv"))
 
 dataTable <- list(
-  entityName = "coralsnakes_data_ITU.xlsx",
-  entityDescription = "creating the Index of Taxonomic Uncertainty",
+  entityName = "Simulation_results.csv",
+  entityDescription = "Output off simulation",
   physical = physical,
   attributeList = attributeList)
-geographicDescription <- "New World (USA - Argentina)"
 
 keywordSet <- list(
-    keywordThesaurus = "ITU coralsnakes",
+    keywordThesaurus = "Output and DR",
     keyword = list("coralsnakes",
-                   "Index of Taxonomic Uncertainty",
-                   "New World")
+                   "DR",
+                   "New World",
+                   "Distribution")
   )
 dataset <- list(
   keywordSet = keywordSet,
-  coverage = geographicDescription,
   dataTable = dataTable)
 
 eml <- list(
@@ -43,5 +84,5 @@ eml <- list(
   dataset = dataset)
 
 eml_validate(eml)
-write_eml(eml, here::here("data","raw", "metadata_ITU.xml"))
-eml_validate(here::here("data","raw", "metadata_ITU.xml"))
+write_eml(eml, here::here("data","processed", "metadata_output.xml"))
+eml_validate(here::here("data","processed", "metadata_output.xml"))

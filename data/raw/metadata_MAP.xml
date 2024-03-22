@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="50fb0c89-ca47-4063-b275-3392c678364b" system="uuid" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd">
+  <dataset>
+    <keywordSet>
+      <keyword>coralsnakes</keyword>
+      <keyword>Index of Taxonomic Uncertainty</keyword>
+      <keyword>New World</keyword>
+      <keyword>DR</keyword>
+      <keywordThesaurus>Map coralsnakes</keywordThesaurus>
+    </keywordSet>
+    <coverage>New World (USA - Argentina)</coverage>
+    <dataTable>
+      <entityName>data_maps.xlsx</entityName>
+      <entityDescription>mapping the DR of New World coralsnak especies.</entityDescription>
+      <physical>
+        <objectName>data_maps.xlsx</objectName>
+        <size unit="bytes">15771</size>
+        <authentication method="MD5">091da9477317205e0dbd22ba7b6d30be</authentication>
+        <dataFormat>
+          <textFormat>
+            <recordDelimiter>&#13;
+</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>Species</attributeName>
+          <attributeDefinition>the list of the 85 New World coralsnake species.</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain/>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Latitude</attributeName>
+          <attributeDefinition>the latitude of the centroid of each New World coralsnake species.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>decimal degrees</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Longitude</attributeName>
+          <attributeDefinition>the longitude of the centroid of each New World coralsnake species.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>decimal degrees</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>ITU</attributeName>
+          <attributeDefinition>Index of Taxonomic Uncertainty for the 85 New World
+    coralsnakes based on taxonomists’responses modeled 
+    for macroecological and taxonomic variables.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>ITU_intervals</attributeName>
+          <attributeDefinition>The ITU classified in intervals of 0.2.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>DR</attributeName>
+          <attributeDefinition>The estimated DR statistic for each New World coralsnake species.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>DR_intervals</attributeName>
+          <attributeDefinition>The ITU classified in intervals of 0.2.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+    </dataTable>
+  </dataset>
+</eml:eml>

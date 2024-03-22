@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="94a3497c-9553-4875-873e-c2151de4c969" system="uuid" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd">
+  <dataset>
+    <keywordSet>
+      <keyword>coralsnakes</keyword>
+      <keyword>DR</keyword>
+      <keyword>New World</keyword>
+      <keyword>Distribution</keyword>
+      <keywordThesaurus>Output and DR</keywordThesaurus>
+    </keywordSet>
+    <dataTable>
+      <entityName>Simulation_results.csv</entityName>
+      <entityDescription>Output off simulation</entityDescription>
+      <physical>
+        <objectName>C:/Linnean-and-Darwinian-Shortfalls/data/processe/Simulation_results.csv</objectName>
+        <dataFormat>
+          <textFormat>
+            <recordDelimiter>&#13;
+</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>R2_lat_antes</attributeName>
+          <attributeDefinition>Adjusted R for the linear model (formula: DR ~ latitude) before incorporating
+the Index of</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>lambda_lat_antes</attributeName>
+          <attributeDefinition>Page’s for the linear model (formula: DR ~ latitude) before incorporating
+the Index of Taxonomic Uncertainty in the simulations and before splitting the species in the
+phylogeny.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>alpha_lat_antes</attributeName>
+          <attributeDefinition>for the linear model (formula: DR ~ latitude) before incorporating the Index
+of Taxonomic Uncertainty in the simulations and before splitting the species in the phylogeny.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>beta_lat_antes</attributeName>
+          <attributeDefinition> for the linear model (formula: DR ~ latitude) before incorporating the Index
+of Taxonomic Uncertainty in the simulations and before splitting the species in the phylogeny.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>R2_quad_lat_antes</attributeName>
+          <attributeDefinition>Adjusted R for the quadratic model (formula: DR ~ latitude + latitude2)
+before incorporating the Index of Taxonomic Uncertainty in the simulations and before
+splitting the species in the phylogeny.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>lambda_quad_lat_antes</attributeName>
+          <attributeDefinition> Page’s for the quadratic model (formula: DR ~ latitude + latitude2)
+before incorporating the Index of Taxonomic Uncertainty in the simulations and before
+splitting the species in the phylogeny.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>alpha_quad_lat_antes</attributeName>
+          <attributeDefinition> for the quadratic model (formula: DR ~ latitude + latitude2) before
+incorporating the Index of Taxonomic Uncertainty in the simulations and before splitting the
+species in the phylogeny.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>beta1_quad_lat_antes</attributeName>
+          <attributeDefinition> for the linear term of the quadratic model (formula: DR ~ latitude +
+latitude2) before incorporating the Index of Taxonomic Uncertainty in the simulations and
+before splitting the species in the phylogeny.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>beta2_quad_lat_antes</attributeName>
+          <attributeDefinition> for the quadratic term of the quadratic model (formula: DR ~ latitude
++ latitude2) before incorporating the Index of Taxonomic Uncertainty in the simulations and
+before splitting the species in the phylogeny.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>R2_lat_depois</attributeName>
+          <attributeDefinition>Adjusted R for the linear model (formula: DR ~ latitude) after incorporating the
+Index of Taxonomic Uncertainty in the simulations and after splitting the species in the
+phylogeny.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>lambda_lat_depois</attributeName>
+          <attributeDefinition> Page’s for the linear model (formula: DR ~ latitude) after incorporating
+the Index of Taxonomic Uncertainty in the simulations and after splitting the species in the
+phylogeny.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>alpha_lat_depois</attributeName>
+          <attributeDefinition>for the linear model (formula: DR ~ latitude) after incorporating the Index
+of Taxonomic Uncertainty in the simulations and after splitting the species in the phylogeny.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>beta_lat_depois</attributeName>
+          <attributeDefinition>for the linear model (formula: DR ~ latitude) after incorporating the Index
+of Taxonomic Uncertainty in the simulations and after splitting the species in the phylogeny.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>R2_quad_lat_depois</attributeName>
+          <attributeDefinition>Adjusted R for the quadratic model (formula: DR ~ latitude + latitude2)
+after incorporating the Index of Taxonomic Uncertainty in the simulations and after splitting
+the species in the phylogeny.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>lambda_quad_lat_depois</attributeName>
+          <attributeDefinition> Page’s for the quadratic model (formula: DR ~ latitude + latitude2)
+after incorporating the Index of Taxonomic Uncertainty in the simulations and after splitting
+the species in the phylogeny.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>alpha_quad_lat_depois</attributeName>
+          <attributeDefinition> for the quadratic model (formula: DR ~ latitude + latitude2) after
+incorporating the Index of Taxonomic Uncertainty in the simulations and after splitting the
+species in the phylogeny.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>beta1_quad_lat_depois</attributeName>
+          <attributeDefinition>for the linear term of the quadratic model (formula: DR ~ latitude +
+latitude2) after incorporating the Index of Taxonomic Uncertainty in the simulations and after
+splitting the species in the phylogeny.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>beta2_quad_lat_depois</attributeName>
+          <attributeDefinition> for the quadratic term of the quadratic model (formula: DR ~
+latitude + latitude2) after incorporating the Index of Taxonomic Uncertainty in the simulations
+and after splitting the species in the phylogeny.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>split</attributeName>
+          <attributeDefinition>the number of splits in each simulation.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>index_run</attributeName>
+          <attributeDefinition>the number of runs. For each of the 1000 phylogenetic trees, 100 runs were
+performed.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>index_tree</attributeName>
+          <attributeDefinition>the number of the phylogenetic tree. There are 1000 phylogenetic trees.</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+    </dataTable>
+  </dataset>
+</eml:eml>
