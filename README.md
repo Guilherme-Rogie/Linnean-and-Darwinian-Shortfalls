@@ -17,4 +17,4 @@ and generate figures for the results of these analyses.
 
 # Authors
 
-Lívia Frateles, Gabriel Nakamura & Guilherme Rogie
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
