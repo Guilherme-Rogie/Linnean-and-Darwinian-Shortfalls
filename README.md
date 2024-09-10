@@ -4,8 +4,7 @@
 This repository contains all data, scripts, and functions related to the
 manuscript titled ‘The interaction between the linnean and darwinian
 shortfalls affects our understanding of the evolutionary dynamics
-driving diversity patterns of New World coralsnakes,’ which has been stored in:
-(<https://zenodo.org/doi/10.5281/zenodo.10869268>).
+driving diversity patterns of New World coralsnakes'.
 
 # Organization
 
@@ -17,4 +16,4 @@ and generate figures for the results of these analyses.
 
 # Authors
 
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Lívia Estéfane Fernandes Frateles, Guilherme Rogie Gonçalves Tavares, Gabriel Nakamura, Nelson Jorge da Silva Jr., Levi Carina Terribile, José Alexandre F. Diniz-Filho
